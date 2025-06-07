@@ -14,5 +14,5 @@ Neste curso você aprenderá:
 - Técnicas avançadas para melhorar a performance
 - Integração com frameworks modernos
 
-## 📂 Estrutura do Repositório
+
 
