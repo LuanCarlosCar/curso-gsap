@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSAP Timeline - Mini Projeto</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  
+  .subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  
+  .btn-cta {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  .btn-cta:hover {
+    background: #00dd77;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">Bem-vindo ao Mundo GSAP</h1>
+    <p class="subtitulo">Descubra animações incríveis com JavaScript puro</p>
+    <button class="btn-cta">Começar Agora</button>
+  </div>
+
+
+  <script >
+      gsap.to(".titulo", { opacity: 1, y: 0 })
+      gsap.to(".subtitulo", { opacity: 1, y: 0 }, "-=0.6")
+      gsap.to(".btn-cta", { opacity: 1, scale: 1 }, "-=0.4");
+  </script>
+</body>
+</html>
